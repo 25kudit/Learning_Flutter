@@ -1,23 +1,17 @@
 import 'package:flutter/material.dart';
 
+import 'homepage.dart';
+
 void main() {
-  runApp( UditApk());
+  runApp(UditApk());
 }
 
 class UditApk extends StatelessWidget {
   
-
   @override
-
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Material(
-        child: Center(
-          child: Container(
-            child:  Text("Learning Flutter and git !"),
-          ),
-        ),
-      ),
+      home: homepage()
     );
   }
 }
