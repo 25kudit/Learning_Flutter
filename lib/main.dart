@@ -14,7 +14,7 @@ class UditApk extends StatelessWidget {
       home: Material(
         child: Center(
           child: Container(
-            child:  Text("Learning Flutter !"),
+            child:  Text("Learning Flutter and git !"),
           ),
         ),
       ),
