@@ -11,7 +11,7 @@ class homepage extends StatelessWidget {
       ),
       body: Center(
         child: Container(
-          child: Text("Learning ${lang} and git in $days days !"),
+          child: Text("Learning $lang and git in $days days !"),
         ),
       ),
       drawer: Drawer(),
