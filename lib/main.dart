@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/loginpage.dart';
-
+import 'package:google_fonts/google_fonts.dart';
 import 'pages/homepage.dart';
 
 void main() {
@@ -13,9 +13,10 @@ class UditApk extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: homepage(),
-      //themeMode: ThemeMode.light,
+      themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple
+        primarySwatch: Colors.pink,
+        fontFamily: GoogleFonts.barlow().fontFamily
       ),
       initialRoute: "/login",
       routes: {
