@@ -29,9 +29,7 @@ class LoginPage extends StatelessWidget {
               width: 300,
               child: TextFormField(
                 decoration: InputDecoration(
-                    labelText: "Username", 
-                    hintText: "Enter Username"
-                ),
+                    labelText: "Username", hintText: "Enter Username"),
               ),
             ),
             SizedBox(
@@ -49,7 +47,9 @@ class LoginPage extends StatelessWidget {
               height: 20,
             ),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, "/home");
+              },
               child: Text("Login"),
             )
           ],
