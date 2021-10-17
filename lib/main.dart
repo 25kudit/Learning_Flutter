@@ -12,6 +12,7 @@ class UditApk extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: homepage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
