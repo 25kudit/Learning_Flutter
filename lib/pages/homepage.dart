@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/widgets/mydrawer.dart';
 
 class homepage extends StatelessWidget {
   final num days = 46.001;
@@ -8,14 +9,14 @@ class homepage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text("Catalog Apk"),
-        shadowColor: Colors.pink,
+        //shadowColor: Colors.deepPurple
       ),
       body: Center(
         child: Container(
           child: Text("Learning $lang and git in $days days !"),
         ),
       ),
-      drawer: Drawer(),
+      drawer: MyDrawer(),
     );
   }
 }

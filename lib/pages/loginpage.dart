@@ -47,6 +47,9 @@ class _LoginPageState extends State<LoginPage> {
                       if (val!.isEmpty) {
                         return "Username cannot be empty";
                       }
+                      if (val != "Udit") {
+                        return "invalid username";
+                      }
                       return null;
                     },
                     decoration: InputDecoration(
@@ -57,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                     },
                   ),
                 ),
-                SizedBox(height:20),
+                SizedBox(height: 20),
                 SizedBox(
                   height: 70,
                   width: 300,
@@ -68,6 +71,8 @@ class _LoginPageState extends State<LoginPage> {
                         return "Password cannot be empty";
                       } else if (val.length < 6) {
                         return "Password length cannot be less than 6";
+                      } else if (val != "1234567") {
+                        return "invalid password";
                       }
                       return null;
                     },
@@ -93,10 +98,8 @@ class _LoginPageState extends State<LoginPage> {
                         Navigator.pushNamed(context, "/home");
                         setState(() {
                           statechange = false;
-                        }
-                        );
+                        });
                       }
-                      
                     },
                     child: AnimatedContainer(
                       duration: Duration(seconds: 1),

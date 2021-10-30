@@ -16,10 +16,10 @@ class UditApk extends StatelessWidget {
       home: homepage(),
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.indigo,
         fontFamily: GoogleFonts.barlow().fontFamily
       ),
-      initialRoute: "/login",
+      initialRoute: "/home",
       routes: {
         "/home": (context) => homepage(),
         "/login": (context) => LoginPage()
